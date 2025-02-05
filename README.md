@@ -17,5 +17,5 @@ Landcover maps are produced at 15-meter resolution for 17 pantropical countries 
 
 
 
-![quads_global](https://github.com/user-attachments/assets/197b06e8-68d4-476f-a554-7a6f2a568909)
+![quads_global](https://github.com/user-attachments/assets/8d13df36-b913-4d59-be03-f37060034cd7)
 Distribution of Landsat quads analyzed to map 17 countries.

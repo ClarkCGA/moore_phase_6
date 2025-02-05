@@ -3,4 +3,9 @@ In support of the Gordon and Betty Moore Foundation's Oceans and Seafood Markets
 
 ![image](https://github.com/user-attachments/assets/45e59976-76b7-4135-99aa-d6e91d37af53)
 
+![image](https://github.com/user-attachments/assets/b3008db4-a496-4b3f-bb58-933dc12589a6)
+
+
 Landcover maps are produced at 15-meter resolution for 17 pantropical countries (Bangladesh, Brazil, Cambodia, China, Ecuador, El Salvador, Honduras, India, Indonesia, Malaysia, Mexico, Myanmar, Nicaragua, Philippines, Sri Lanka, Thailand, and Vietnam) for the years 1999, 2014, 2018, 2020 and 2022 (2024 in progress). The legend categories include Mangroves, Other Coastal Wetlands, Pond Aquaculture, Open Water and Other. Landcover maps for 2014 onwards are developed using pansharpened Landsat 8/9 OLI imagery, supplemented with Sentinel-1 and Sentinel-2 data where necessary (typically in cloudier regions). Landcover maps for 1999 are based on Landsat 5 ETM+ imagery. Data is provided in raster format and distributed as compressed GeoTIFF files. All data are provided using a custom equal-area global reference system that follows the specifications listed below (INSERT REF SYSTEM PARAMETERS)
+
+

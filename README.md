@@ -49,4 +49,45 @@ Distribution of over 600 Landsat quads analyzed to map 17 countries.
 ![image](https://github.com/user-attachments/assets/c7acc56e-cbe2-4e7b-8d54-600de27948b8)
 
 
+
+## Landsat Imagery
+
+* Navigate to TerrSet Explorer (left side panel) and locate Files tab. Here you will see your working and resource folders. Within resource folder, click on the file labeled landsat8_false_color_composite to launch the raster image in TerrSet display. 
+
+* User the cursor to explore the raster layer. This image is a Landsat 8 false color composite (bands 4,6,5) of a region in Ecuador where the ponds (blue/black) can be seen mosaicked across mangrove forests, which appear in a striking orange color. This will serve as a test area for this training module. 
+
+* TerrSet comes with many useful shortcuts. To quickly zoom to the full extent of the selected raster layer, press the “Home” button. To quickly maximize the Display window on screen press “End”
+
+* With the image selected in the composer window, press “Control+g” to launch the bounding box of the display window in Google Earth. This is an effective way to cross-reference the GIS images with Google Earth time series data to understand the landscape dynamics.
+
+
+
+![image](https://github.com/user-attachments/assets/8d498e2e-88b4-4050-b20c-7eb9c3327f80)
+
+
+
+## Landcover Classification
+
+* In the resources folder you will see landcover_2024. Add this to composer display window in the following ways 
+      * Right-clicking the file in Explorer and adding layer(s)
+      * Dragging and dropping the image into the composer window (note this only works if the images have the same reference parameters)
+      * With the layer highlighted in Explorer click Shift+Insert
+      * Press “r” with composer window highlighted to launch add raster layer and locate the file using the picklist option 
+
+* Change the palette by clicking the yellow and black checkered box in the composer window next to file name and clicking on the picklist option that pops up. Locate the file labeled Legend_Aquaculture to change the palette. This palette has been custom made for our map data to easily render the classes of interest. To view the image categories, right click on the display window and select map properties. Within the Map Properties form, select legends tab and click the radio button to make the legend 1 visible. You will now see the five categories in the display window (Mangrove, Coastal Wetlands, Pond Aquaculture, Water, Other). 
+
+* Explore this map compared to the false color composite by toggling the layers on and off in the composer by clicking on the red check mark. As a hot key, try pressing “w” to toggle the top raster in composer on and off. To see and customize other hot keys, go to File > User Preferences > Hotkeys in the top left corner.
+
+
+
+![image](https://github.com/user-attachments/assets/e83aa4f5-b36b-46d3-b45f-bbbfbd54f615)
+
+
+
+
+
+
+
+
+
 </details>

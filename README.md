@@ -84,6 +84,33 @@ Distribution of over 600 Landsat quads analyzed to map 17 countries.
 
 
 
+## DIGITIZE Module
+
+As can be seen, this landcover map has some noticeable errors and revisions that need to be made. To streamline the process of editing raster maps and vector files, TerrSet provides users the DIGITIZE module.
+
+To access the DIGITIZE module, users can select the DIGITIZE icon in the toolbar (red and yellow crosshair) when a display window is open. Traditionally, the DIGITIZE module was used to help users create vector layers, often for the purpose of drawing training sites. For this tutorial, we will be focusing on the option to use vector features to update raster image(s). 
+
+Click the radio button to make this option visible and note the 4 options available (All pixels within digitized features, One class within digitized features, Use mask file, Overlay cover digitized features with raster image). This tutorial will explore each of these and examples of when to apply the different options.
+
+
+
+![image](https://github.com/user-attachments/assets/2a75bd16-7ffc-4602-b2c1-87b0d45e7bc7)
+
+
+
+## DIGITIZE - All pixels within digitized features
+
+The first option, and often most utilized for our work, is to digitize all pixels within a digitized feature – that is to say that all pixels that overlap with the features digitized by the user will be updated with the respective new value. This is most often used when new features need to be manually drawn into the map (e.g. adding a new ponds, removing errors, etc.) We will now use this option to add ponds to the map
+
+Start by zooming in on the region of the map that is shown below. Once located, use the blend layer option in composer on the landcover map to reveal the landsat image below it. As can be seen, a new pond is present in the imagery, but is not reflected in our landcover mapping – let’s update this.
+
+
+
+![image](https://github.com/user-attachments/assets/09825764-0b04-47a0-91e2-5929138dde9c)
+
+
+
+
 
 
 

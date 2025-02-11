@@ -34,15 +34,15 @@ Distribution of over 600 Landsat quads analyzed to map 17 countries.
 
 ## Setting Up a New Project
 
-Launch TerrSet by clicking on the desktop icon or searching the application in Start menu on machine. This will load the liberaGIS splash screen on your monitor.
+* Launch TerrSet by clicking on the desktop icon or searching the application in Start menu on machine. This will load the liberaGIS splash screen on your monitor.
 
-Once loaded, locate the TerrSet Explorer panel on the left side of the screen. Here you can revisit previous projects, create new projects, and delete projects. Users can also assign their working and resource folders in the Explorer panel. The working folder is the default location for files created within TerrSet, while the resource folders are designed to help users organize their input data. 
+* Once loaded, locate the TerrSet Explorer panel on the left side of the screen. Here you can revisit previous projects, create new projects, and delete projects. Users can also assign their working and resource folders in the Explorer panel. The working folder is the default location for files created within TerrSet, while the resource folders are designed to help users organize their input data. 
 
-Right click in the Explorer panel and click New Project (alternatively press “Insert”). Locate the ecuador folder downloaded for this tutorial and press OK. You will now see the ecuador project in your Explorer panel.
+* Right click in the Explorer panel and click New Project (alternatively press “Insert”). Locate the ecuador folder downloaded for this tutorial and press OK. You will now see the ecuador project in your Explorer panel.
 
-The working folder is the folder where all new outputs will be created. Navigate to the working subfolder within the Ecuador folder using the pick list option. 
+* The working folder is the folder where all new outputs will be created. Navigate to the working subfolder within the Ecuador folder using the pick list option. 
 
-Right click and add a resource folder and navigate to the resource subfolder within the ecuador data. This folder hosts the input data for this tutorial. 
+* Right click and add a resource folder and navigate to the resource subfolder within the ecuador data. This folder hosts the input data for this tutorial. 
 
 
 

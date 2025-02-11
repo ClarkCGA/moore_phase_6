@@ -110,6 +110,25 @@ Start by zooming in on the region of the map that is shown below. Once located, 
 
 
 
+With the landcover raster layer highlighted in the composer, click on the DIGITIZE icon and select the option to use vector features to update raster layer(s).  
+
+At the top of the form is the option to name the file – let’s call this file “add_pond” as we will be using it to add the pond aquculture category to our map and overwrite whatever the class was previously underneath the features drawn by the user.
+
+Layer type and palette for the vector layer can be left as the defaults (polygon, Qual)
+
+The New class ID option is very important. This is the class value that will be newly assigned during the update process. As we are adding ponds to our map (class 3) we can change this value to 3.
+
+The raster layer(s) to update option is also important – this is the raster image in your composer that will have the updates applied to. In our case we are updating the landcover_2024 raster, so make sure that is the layer highlighted (NOTE – this often leads to errors so make sure you are updating the correct layers with the correct values in application of quad editing)
+
+Select the first option (All pixels within digitized features) and press OK. This will launch the digitize tool by adding the vector layer to your composer and changing your cursor to a crosshair. At this point you are in DIGITIZE mode.
+
+
+
+![image](https://github.com/user-attachments/assets/e46153f7-378e-4821-b36b-07f1d9484d25)
+
+
+
+
 
 
 

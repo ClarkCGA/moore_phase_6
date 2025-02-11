@@ -86,11 +86,11 @@ Distribution of over 600 Landsat quads analyzed to map 17 countries.
 
 ## DIGITIZE Module
 
-As can be seen, this landcover map has some noticeable errors and revisions that need to be made. To streamline the process of editing raster maps and vector files, TerrSet provides users the DIGITIZE module.
+* As can be seen, this landcover map has some noticeable errors and revisions that need to be made. To streamline the process of editing raster maps and vector files, TerrSet provides users the DIGITIZE module.
 
-To access the DIGITIZE module, users can select the DIGITIZE icon in the toolbar (red and yellow crosshair) when a display window is open. Traditionally, the DIGITIZE module was used to help users create vector layers, often for the purpose of drawing training sites. For this tutorial, we will be focusing on the option to use vector features to update raster image(s). 
+* To access the DIGITIZE module, users can select the DIGITIZE icon in the toolbar (red and yellow crosshair) when a display window is open. Traditionally, the DIGITIZE module was used to help users create vector layers, often for the purpose of drawing training sites. For this tutorial, we will be focusing on the option to use vector features to update raster image(s). 
 
-Click the radio button to make this option visible and note the 4 options available (All pixels within digitized features, One class within digitized features, Use mask file, Overlay cover digitized features with raster image). This tutorial will explore each of these and examples of when to apply the different options.
+* Click the radio button to make this option visible and note the 4 options available (All pixels within digitized features, One class within digitized features, Use mask file, Overlay cover digitized features with raster image). This tutorial will explore each of these and examples of when to apply the different options.
 
 
 
@@ -100,9 +100,9 @@ Click the radio button to make this option visible and note the 4 options availa
 
 ## DIGITIZE - All pixels within digitized features
 
-The first option, and often most utilized for our work, is to digitize all pixels within a digitized feature – that is to say that all pixels that overlap with the features digitized by the user will be updated with the respective new value. This is most often used when new features need to be manually drawn into the map (e.g. adding a new ponds, removing errors, etc.) We will now use this option to add ponds to the map
+* The first option, and often most utilized for our work, is to digitize all pixels within a digitized feature – that is to say that all pixels that overlap with the features digitized by the user will be updated with the respective new value. This is most often used when new features need to be manually drawn into the map (e.g. adding a new ponds, removing errors, etc.) We will now use this option to add ponds to the map
 
-Start by zooming in on the region of the map that is shown below. Once located, use the blend layer option in composer on the landcover map to reveal the landsat image below it. As can be seen, a new pond is present in the imagery, but is not reflected in our landcover mapping – let’s update this.
+* Start by zooming in on the region of the map that is shown below. Once located, use the blend layer option in composer on the landcover map to reveal the landsat image below it. As can be seen, a new pond is present in the imagery, but is not reflected in our landcover mapping – let’s update this.
 
 
 
@@ -110,17 +110,17 @@ Start by zooming in on the region of the map that is shown below. Once located, 
 
 
 
-With the landcover raster layer highlighted in the composer, click on the DIGITIZE icon and select the option to use vector features to update raster layer(s).  
+* With the landcover raster layer highlighted in the composer, click on the DIGITIZE icon and select the option to use vector features to update raster layer(s).  
 
-At the top of the form is the option to name the file – let’s call this file “add_pond” as we will be using it to add the pond aquculture category to our map and overwrite whatever the class was previously underneath the features drawn by the user.
+* At the top of the form is the option to name the file – let’s call this file “add_pond” as we will be using it to add the pond aquculture category to our map and overwrite whatever the class was previously underneath the features drawn by the user.
 
-Layer type and palette for the vector layer can be left as the defaults (polygon, Qual)
+* Layer type and palette for the vector layer can be left as the defaults (polygon, Qual)
 
-The New class ID option is very important. This is the class value that will be newly assigned during the update process. As we are adding ponds to our map (class 3) we can change this value to 3.
+* The New class ID option is very important. This is the class value that will be newly assigned during the update process. As we are adding ponds to our map (class 3) we can change this value to 3.
 
-The raster layer(s) to update option is also important – this is the raster image in your composer that will have the updates applied to. In our case we are updating the landcover_2024 raster, so make sure that is the layer highlighted (NOTE – this often leads to errors so make sure you are updating the correct layers with the correct values in application of quad editing)
+* The raster layer(s) to update option is also important – this is the raster image in your composer that will have the updates applied to. In our case we are updating the landcover_2024 raster, so make sure that is the layer highlighted (NOTE – this often leads to errors so make sure you are updating the correct layers with the correct values in application of quad editing)
 
-Select the first option (All pixels within digitized features) and press OK. This will launch the digitize tool by adding the vector layer to your composer and changing your cursor to a crosshair. At this point you are in DIGITIZE mode.
+* Select the first option (All pixels within digitized features) and press OK. This will launch the digitize tool by adding the vector layer to your composer and changing your cursor to a crosshair. At this point you are in DIGITIZE mode.
 
 
 

@@ -25,3 +25,7 @@ Distribution of over 600 Landsat quads analyzed to map 17 countries.
 
 
 # Training Resources
+
+## DIGITIZE Tutorial
+
+### Setting Up a New Project

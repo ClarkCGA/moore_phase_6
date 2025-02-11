@@ -106,7 +106,8 @@ Start by zooming in on the region of the map that is shown below. Once located, 
 
 
 
-![image](https://github.com/user-attachments/assets/09825764-0b04-47a0-91e2-5929138dde9c)
+![image](https://github.com/user-attachments/assets/cf6c8ed4-2533-432b-8697-e57c72a604a5)
+
 
 
 

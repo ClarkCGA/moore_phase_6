@@ -1,13 +1,13 @@
 Ecuador,2024,,,,No. Scenes,6
 ,,,,,Complete,0
 ,,,,,% Complete,0.00%
-Path/Row,Analyst,Date Completed,Notes,,,
+Path/Row,Analyst,Date Completed,,,,
 10_59,,,,,,
-10_62,,,,,,
+10_62,Eli,,,,,
 11_59,,,,,,
-11_60,,,,,,
-11_61,,,,,,
-11_62,,,,,,
+11_60,Annan,,,,,
+11_61,Adlai,,,,,
+11_62,Ben,,,,,
 ,,,,,,
 Total,,Total,,,,
 6,,0,,,,
@@ -17,7 +17,7 @@ Total,,Total,,,,
 Indonesia,2024,,,,No. Scenes,198
 ,,,,,Complete,0
 ,,,,,% Complete,0.00%
-Path/Row,Analyst,Date Completed,Notes,,,
+Path/Row,Analyst,Date Completed,,,,
 100_65,,,,,,
 100_66,,,,,,
 101_62,,,,,,
@@ -225,7 +225,7 @@ Total,,Total,,,,
 Myanmar,2024,,,,No. Scenes,23
 ,,,,,Complete,0
 ,,,,,% Complete,0.00%
-Path/Row,Analyst,Date Completed,Notes,,,
+Path/Row,Analyst,Date Completed,,,,
 130_50,,,,,,
 130_51,,,,,,
 130_52,,,,,,
@@ -258,7 +258,7 @@ Total,,Total,,,,
 Thailand,2024,,,,No. Scenes,21
 ,,,,,Complete,0
 ,,,,,% Complete,0.00%
-Path/Row,Analyst,Date Completed,Notes,,,
+Path/Row,Analyst,Date Completed,,,,
 127_52,,,,,,
 127_55,,,,,,
 127_56,,,,,,
@@ -289,7 +289,7 @@ Total,,Total,,,,
 Vietnam,2024,,,,No. Scenes,27
 ,,,,,Complete,0
 ,,,,,% Complete,0.00%
-Path/Row,Analyst,Date Completed,Notes,,,
+Path/Row,Analyst,Date Completed,,,,
 123_50,,,,,,
 123_51,,,,,,
 123_52,,,,,,

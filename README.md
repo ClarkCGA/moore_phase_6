@@ -34,6 +34,8 @@ Distribution of over 600 Landsat quads analyzed to map 17 countries.
 
 # DIGITIZE Tutorial
 
+* Data for DIGITIZE tutorial can be downloaded from this repo (tutorial_data_digitize.zip)
+
 ## Setting Up a New Project
 
 * Launch TerrSet by clicking on the desktop icon or searching the application in Start menu on machine. This will load the liberaGIS splash screen on your monitor.

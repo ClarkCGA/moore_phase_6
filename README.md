@@ -1,5 +1,7 @@
 <details>
 
+
+
 <summary>Research Context</summary>
 
 # GBMF Phase 6 Aquaculture and Coastal Habitats Mapping for 2024
@@ -221,25 +223,73 @@ Distribution of over 600 Landsat quads analyzed to map 17 countries.
 
 
 
+* Highlight the landcover_2024 raster in composer and launch the DIGITIZE form. Select the option to use vector features to update raster layer(s) and change the created layer name to be “add_other_masked.” Change the New class ID to be 5 (other) and select the third option (use mask file). Here you identify the mask layer by typing the name, choosing the file from the picklist option, or dragging and dropping the layer into the text box.
 
 
 
+![image](https://github.com/user-attachments/assets/e4143873-de6c-402f-98ee-d8dc0dbd15bc)
 
 
 
+* Press OK and digitize following the same controls as before. As we are updating all values within the mask we indicated, we should be able to easily circle the erroneous classes along the edge in one polygon, and update all values to the proper masked extent.
 
 
 
+![image](https://github.com/user-attachments/assets/d92e2b26-0e74-4a37-84b4-55ebd5cafbd9)
 
 
 
+* Once you have completed the polygon feature to update, press the Save Digitized Data (Red Arrow in toolbar) and update the raster image. The map will now properly display the category Other (5) along the edge of the map (without any bleeding outside the masked area)
 
 
 
+![image](https://github.com/user-attachments/assets/cf71a744-cec9-4960-bc58-2f2c83f28a8f)
 
 
 
+## DIGITIZE - Overlay cover digitized features with raster image
 
+
+
+* The last option available to users is the Overlay cover digitized features with raster image. This is the option you will use the least for this research, but it is still important to know. This option allows users to cover the current image with ALL the classes of a different raster image that are within the digitized regions (i.e. to overlay cover one map on top of the other within the digitized regions). This can be helpful when you have a reference map that you are trying to cover on top of the edited map in specific areas.
+
+* Zoom to the region shown in the display below. Notice how we are missing an entire chunk of the landcover map – this is a great case study for the fourth digitize option.
+
+  
+
+![image](https://github.com/user-attachments/assets/c7655320-a0b4-40ba-a485-08436c87a940)
+
+
+
+* This tutorial includes a reference map that can be used to update the existing image you are editing. Add the file missing_landcover_2024 to your composer and toggle the transparency option in composer (right side of composer next to blue channel box) – notice how it provides the missing information we need (note, unless you are using the same palette it will appear in the default colors, but the values are correct)
+
+
+
+![image](https://github.com/user-attachments/assets/1ee45969-d04d-4740-9787-1fb10357e9b0)
+
+
+
+* Highlight the landcover_2024 raster in composer and launch the digitize form (note, make sure to highlight the correct raster as you should have multiple in your composer now) Select the option to use vector features to update raster layer(s). Name the file to be created add_cover and make sure the raster layer to be updated is landcover_2024. Select the fourth option (Overlay cover digitized features with raster image) and locate the missing_landcover_2024 image through the picklist, drag and drop, or typing in the short name
+
+
+
+![image](https://github.com/user-attachments/assets/ddb56fd5-f525-466b-a0ca-b0ba7e94660a)
+
+
+
+* Press OK and begin digitizing. We can cover the missing map on our existing landcover map for updates by circling it with a digitize feature.
+
+
+
+![image](https://github.com/user-attachments/assets/b14b2342-a87a-4c9a-a97b-a22a8b55661a)
+
+
+
+* Once finished digitizing, press Save Digitized Data (Red Arrow in toolbar) and OK to updated the raster image. The raster layer will now be updated with the missing information from the reference map.
+
+
+
+![image](https://github.com/user-attachments/assets/5c36b4bd-22ea-4974-a584-de0aeea22741)
 
 
 

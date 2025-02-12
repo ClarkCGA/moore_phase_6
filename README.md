@@ -36,7 +36,7 @@ Distribution of over 600 Landsat quads analyzed to map 17 countries.
 
 
 
-[phase_6_quad_list.csv](https://github.com/user-attachments/files/18774024/phase_6_quad_list.csv)
+PLACEHOLDER
 		
 
   

@@ -128,6 +128,112 @@ Distribution of over 600 Landsat quads analyzed to map 17 countries.
 
 
 
+* While in DIGITIZE mode, the cursor will function as  crosshair that allows users to draw polygons onto their window, which will in turn be the vector features within which updates are applied. To start drawing a polygon, click on the map to where the boundaries of the pond system can be seen and start building out a polygon with each vertices added. Right clicking will end the polygon by connecting to the first vertex. Holding Shift key will allow the user to continuously draw the polygon (much like a pencil).
+
+* Using the options shown above, draw out the aquaculture ponds to be updated in the map. Once completed, the polygon feature should appear on screen. 
+
+
+
+![image](https://github.com/user-attachments/assets/b2e2dae6-fc57-4553-a8b6-4e5575e8167d)
+
+
+
+* At this point, we could update the raster layer using the Save Digitized Data option (Red arrow next to Red X in toolbar). However, for training purposes we will explore how to delete polygons if mistakes are made (this often happens)
+
+* With the add_pond vector layer highlighted in composer, click on the polygon with your cursor. You will see it selected on screen with the ID value (3). To delete the polygon, click the Red X in the toolbar (delete feature). Alternatively, press the “Delete” key with the feature selected on screen. As can be seen, the polygon feature has been successfully deleted from the vector layer.
+
+* Now let’s get back to our task of adding ponds. To continue editing the raster as before, highlight the layer in composer and then press the DIGITIZE logo and select “continue to digitize features to update layer with.” Alternatively, press the “d” key with the layer selected in composer to quickly start digitizing again (this is another useful hot key that will make this process faster for the user).
+
+* Draw in the new pond system as before, but this time press the red arrow icon in the toolbar (Save Digitized Data). When prompted to update the layer, press OK. The landcover map will now be updated with the new ponds and visible on screen.
+
+
+
+![image](https://github.com/user-attachments/assets/9ec7c6f2-c0c1-4823-babb-af68d0bfb551)
+
+
+
+## DIGITIZE - One class within digitized features
+
+* Updating all features within drawn polygons is very useful, but sometimes you want to have more control over which features get updated, rather than an all-inclusive update. This presents itself contextually, but is still an essential option to know. Let’s explore a case where updating only a single class with the digitized features is the most efficient way to add changes
+
+* Locate the region shown below – this is an area where the map is wrongfully categorizing mangrove (1) patches as water (4). When compared to the imagery, it is clear this is an artifact of map error and not the actual landscape.
+
+
+
+![image](https://github.com/user-attachments/assets/d535bc52-3b4a-4ee4-a897-56d9311b2ae2)
+
+
+
+* While we could update this using the option before (All pixels within digitized features), it would be awfully tedious and have a larger margin for user error. This is a perfect opportunity to use our second DIGITZE option (One class within digitized feature)
+
+* Similar to before, highlight the landcover_2024 raster layer in composer and press the DIGITIZE icon (alternatively press “d”). Within the DIGITIZE form, change the name of the layer to be created to be “water_to_pond” and select update vector features to update raster layer(s) option. Change the new class ID to be 1 for mangroves and indicate the second option to be used (One class within digitized feature). The original ID value can be changed to 4 (water) as this is the class value we are updating (therefore, no other values besides 4 will be updated with the new value of 1 within our digitized features)
+
+
+
+![image](https://github.com/user-attachments/assets/19c200b2-3a15-4360-9ca6-044be0ee0c0c)
+
+
+
+* Press OK to launch the DIGITIZE mode. All the same controls as before apply, but the way in which the raster layer gets updated will be different. Unlike the first option, this option will allow us to generally circle the water classes to update to mangrove, without having to be sensitive of the other classes (as the only class to be updated within the features is 4).
+
+* Draw a bounding polygon around the water in this area and close the feature.
+
+
+
+![image](https://github.com/user-attachments/assets/fb235ac2-f946-4c1f-8e7d-1970fd97feb4)
+
+
+
+* Press the Save Digitized Data icon and look at the landcover map. We have now successfully updated the water errors to mangrove, without sacrificing any of the other classes. 
+
+
+
+![image](https://github.com/user-attachments/assets/cf02f8e8-e01d-4205-8520-281a66974ff7)
+
+
+
+## DIGITIZE - Use mask file
+ 
+
+* Often when digitizing, the need to restrict the updates to a certain region (as opposed to a certain class like the previous step) occurs. This can be for a variety of reasons (working on the edge of maps, updating from a pre-existing boolean image, etc.) and often leads to the need for a mask. This is the next option in the DIGITIZE module we will explore.
+
+* Zoom in on the northwest corner of the map to the area shown below.
+
+
+
+![image](https://github.com/user-attachments/assets/07c22dc6-3061-4300-81a7-55038658a4d1)
+
+
+
+* As can be seen, there are errors in the map that appear as mangroves (1) and pond aquaculture (3) but are really other (5) in reality. Let’s fix this problem.
+
+* One way we could fix this would be to digitize all these polygons by hand (option 1) but that would not only be time consuming, it would also leave room for error along the edge (we do not want to add areas into the map as categories when they should be background)
+
+* Option 2 would allow us to update only certain classes within the digitized features, but we would need to run that twice (once for class 1 and once for class 3)
+
+* This leads us to option 3, Updating using a mask file. This is an excellent example of when we would use this option as we are looking to update values along the edge of the map, but do not want to bleed outside the study area. 
+
+* Go to the resource folder and add the mask to this composer window. Use the blend layer option in composer to compare the mask to the landcover_2024 map. Notice how this is a boolean raster image that has pixel values of 1 where we have map data and 0 where we do not (background). This is an appropriate map to use as a mask file.
+
+
+
+![image](https://github.com/user-attachments/assets/69bf5d8b-cee8-4158-a834-ead114f020ba)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

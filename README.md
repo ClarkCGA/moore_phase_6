@@ -48,7 +48,9 @@ PLACEHOLDER
   
 <summary>Training Resources</summary>
 
-# DIGITIZE Tutorial
+<details>
+
+# DIGITIZE
 
 * Data for DIGITIZE tutorial can be downloaded from this repo (tutorial_data.zip)
 
@@ -309,6 +311,6 @@ PLACEHOLDER
 
 ![image](https://github.com/user-attachments/assets/5c36b4bd-22ea-4974-a584-de0aeea22741)
 
-
+</details>
 
 </details>

@@ -50,7 +50,7 @@ PLACEHOLDER
 
 <details>
 
-# DIGITIZE
+<summary>DIGITIZE</summary>
 
 * Data for DIGITIZE tutorial can be downloaded from this repo (tutorial_data.zip)
 

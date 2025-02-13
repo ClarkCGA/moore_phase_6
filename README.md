@@ -52,6 +52,8 @@ PLACEHOLDER
 
 <summary>DIGITIZE</summary>
 
+## Tutorial Data
+
 * Data for DIGITIZE tutorial can be downloaded from this repo (tutorial_data.zip)
 
 ## Setting Up a New Project

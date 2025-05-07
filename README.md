@@ -313,6 +313,40 @@ PLACEHOLDER
 
 ![image](https://github.com/user-attachments/assets/5c36b4bd-22ea-4974-a584-de0aeea22741)
 
+
+
 </details>
+
+
+
+<details>
+
+
+
+<summary>CP LANDSAT</summary>
+
+
+
+## Tutorial Data
+
+
+
+* Data for CP LANDSAT tutorial can be downloaded from this repo (tutorial_data.zip)
+
+
+
+## CP LANDSAT - Download Scene from Earth Explorer
+
+
+
+* To download Landsat imagery for a quad, go to https://earthexplorer.usgs.gov/
+
+
+
+
+ 
+</details>
+
+
 
 </details>

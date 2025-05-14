@@ -486,14 +486,14 @@ Below is a description of each ogh the images used in digitizing mangroves.
 
 | Layer Name              | Description                   | Preview      | 
 |-------------------------|-------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| Q130052_20241221_band_1 | Coastal Aerosol               |      |
-| Q130052_20241221_band_2 | Blue                          |      | 
-| Q130052_20241221_band_3 | Green                         |      | 
-| Q130052_20241221_band_4 | Red                           |      |
-| Q130052_20241221_band_5 | Near-Infrared (NIR)           |      | 
-| Q130052_20241221_band_6 | Shortwave Infrared 1 (SWIR1)  |      |
-| Q130052_20241221_band_7 | Shortwave Infrared 2 (SWIR2)  |      |
-| Q130052_20241221_band_8 | Panchromatic                  |      |
+| Q130052_20241221_band_1 | Coastal Aerosol               |   ![image](https://github.com/user-attachments/assets/92b00481-b4c9-4172-83be-64e25e28c547)  |
+| Q130052_20241221_band_2 | Blue                          |   ![image](https://github.com/user-attachments/assets/30374887-55c2-4be3-bf84-11606051e8eb) | 
+| Q130052_20241221_band_3 | Green                         |    ![image](https://github.com/user-attachments/assets/f25016a0-c785-409a-b9a4-a0c5df2ef03a)  | 
+| Q130052_20241221_band_4 | Red                           |  ![image](https://github.com/user-attachments/assets/45dd1b7a-b806-4b67-95f9-6b08947e4958)  |
+| Q130052_20241221_band_5 | Near-Infrared (NIR)           |    ![image](https://github.com/user-attachments/assets/8e9f88af-862e-4ff1-abce-3df5eaadadea) | 
+| Q130052_20241221_band_6 | Shortwave Infrared 1 (SWIR1)  |   ![image](https://github.com/user-attachments/assets/51d6ca74-b2bd-463b-933e-ade512e17033) |
+| Q130052_20241221_band_7 | Shortwave Infrared 2 (SWIR2)  |   ![image](https://github.com/user-attachments/assets/c0efee8b-46dc-4801-afb7-edad5c9fe275)   |
+| Q130052_20241221_band_8 | Panchromatic                  |   ![image](https://github.com/user-attachments/assets/94f1eba9-6c30-4da9-9b00-b917baf59ef8)   |
 | Q130052_20241221_composite456 | False Color Composite)  | ![image](https://github.com/user-attachments/assets/3b7aa040-1989-4d61-834c-56131e303af2) |
 | Q130052_20241221_tass_bright  | Tasseled cap brightness | ![image](https://github.com/user-attachments/assets/8dcf6214-09a9-4006-a298-7fdf565fafb9)|
 | Q130052_20241221_tass_green   | Tasseled cap greenness  |  ![image](https://github.com/user-attachments/assets/fccb44b1-bbcb-4845-abcb-7a2b4f0d990d) |

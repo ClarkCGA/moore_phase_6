@@ -420,10 +420,87 @@ Below is a description of each ogh the images used in digitizing mangroves.
 
 * To download Landsat imagery for a quad, go to https://earthexplorer.usgs.gov/
 
+* Log in, or create an account
+  
+* Once you have logged in, select ‘path / row’ as your geocoding method
+
+* Input the first three digits of your quad as the path number and the second three as the row number
+  
+* Constrain the dates between January 1st and December 31st for 2024.
+  
+* Go to data sets
+
+  
+![image](https://github.com/user-attachments/assets/3cccca91-1c71-45c2-9fb9-6fdc400d2080)
+
+
+* In the data search list, under Landsat, select ‘Landsat Collection 2 Level 1’ and check the box for Landsat 8/9 OLI/TIRS C2 L1, then go to results.
+	* Collection 2 Level 1 contains preprocessed non-atmospherically corrected data that represents top-of-atmosphere (TOA) reflectance values. We're using this dataset becuase this is most similar to TOA reflectance data distributed from early Landsat sattelites.
+
+![image](https://github.com/user-attachments/assets/2c6941db-92bb-44e1-b93b-32b097aa1db7)
+
+
+* Examine the available images to find one with minimal clouds
+
+![image](https://github.com/user-attachments/assets/8b393824-a714-4b9a-9194-c1f5bd846c1d)
+
+
+* To download the image, select download, then product options, then download the product bundle.
+
+![image](https://github.com/user-attachments/assets/21e8c309-cf34-463f-89a2-64725b50f8eb)
+
+![image](https://github.com/user-attachments/assets/21a18e4f-1569-4933-b72e-1b9c3d115aa9)
+
+## Extracting downloaded data
+
+* The data will be downloaded as a .tar file
+* Extract the file to a new folder within your quad folder named ‘landsat’
+* Add the new ‘landsat’ folder as a resource folder to your terrset project.
+
+![image](https://github.com/user-attachments/assets/24995d38-58eb-40c6-9edc-e87ff39058f7)
+
+![image](https://github.com/user-attachments/assets/f12eb277-eacd-43a8-b6c0-2ed6b804fe00)
+
+
+## Running CP Landsat
+
+* Open the CP_Landsat tool.
+* Select the file that ends in MTL.txt from the downloaded files.
+	* This file records metadata for the scene, including band names, projection systems, data types, as well as attributes like image acquisition  time and sun angle. 
+* As the mask, choose the study area mask from the resources folder.
+* The tool will take a while (15-30 minutes) to run. 
+
+  
+![image](https://github.com/user-attachments/assets/0fb06571-ff8c-48f9-bec0-ddb51754ee9e)
+
+* CP_Landsat imports the .tif files to .rst, then projects them to the desired coordinate system and performs the following functions:
+* Images are pansharpened to 15 meter resolution.
+	* The panchromatic band captures light across the visible spectrum at a 15m resolution, compared to 30m for all other bands. The information from the panchromatic band can then be used to increase the resolution of the
+ * The  [tasseled cap transformation](https://pro.arcgis.com/en/pro-app/latest/help/analysis/raster-functions/tasseled-cap-function.htm) is also run on the data.
+	* Tasseled cap reduces the dimentionality of the data. By taking data from 6 bands and condensing it down to 3 images, it still retains important charactaristics about the land surface, and reduces processing time.
+ 	* The three output images are greeness, wetness, and brightness. Greenness represents healthy vegetation, while wetness measures surface water as well as moisture content in soil and vegetation. Brightness represents the overall albedo of ground objects. 
+
+
+## CP Landsat Layer Outputs
+
+
+| Layer Name              | Description                   | Preview      | 
+|-------------------------|-------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
+| Q130052_20241221_band_1 | Coastal Aerosol               |      |
+| Q130052_20241221_band_2 | Blue                          |      | 
+| Q130052_20241221_band_3 | Green                         |      | 
+| Q130052_20241221_band_4 | Red                           |      |
+| Q130052_20241221_band_5 | Near-Infrared (NIR)           |      | 
+| Q130052_20241221_band_6 | Shortwave Infrared 1 (SWIR1)  |      |
+| Q130052_20241221_band_7 | Shortwave Infrared 2 (SWIR2)  |      |
+| Q130052_20241221_band_8 | Panchromatic                  |      |
+| Q130052_20241221_composite456 | False Color Composite)  | ![image](https://github.com/user-attachments/assets/3b7aa040-1989-4d61-834c-56131e303af2) |
+| Q130052_20241221_tass_bright  | Tasseled cap brightness | ![image](https://github.com/user-attachments/assets/8dcf6214-09a9-4006-a298-7fdf565fafb9)|
+| Q130052_20241221_tass_green   | Tasseled cap greenness  |  ![image](https://github.com/user-attachments/assets/fccb44b1-bbcb-4845-abcb-7a2b4f0d990d) |
+| Q130052_20241221_tass_wet     | Tasseled cap wetness    |  ![image](https://github.com/user-attachments/assets/822dd990-fee2-4bec-b310-196d10c6d023) |
 
 
 
- 
 </details>
 
 

@@ -126,7 +126,7 @@ Below is a description of each ogh the images used in digitizing mangroves.
 
  </details>
 
-
+### Tutorial 3: Digitize
 <details>
 
 <summary>DIGITIZE</summary>
@@ -396,7 +396,7 @@ Below is a description of each ogh the images used in digitizing mangroves.
 
 </details>
 
-
+### Tutorial 4: Bringing in Additional Data
 
 <details>
 
@@ -503,6 +503,77 @@ Below is a description of each ogh the images used in digitizing mangroves.
 
 </details>
 
+### Tutorial 5: Image Classification
+<details>
 
+<summary>Mahalanobis Classification</summary>
+
+* Now that the landsat images have been downloaded, they’re ready to be classified.
+* Open the newly downloaded composite.
+* Here we see a large area within a quad is misclassified as not having any mangrove.
+
+![image](https://github.com/user-attachments/assets/537a458f-324d-4eca-9844-578fc73c8ccf)
+
+* Create a new vector file and label it ‘trainmangrove’
+* Digitize some training sites within the mangrove class. (make sure to save the digitization edits before moving to the next step!)
+	* Areas within mangrove often appear deep red in the composite, but it's important to get a variety of training sites throughout the region you are trying to classify.
+
+![image](https://github.com/user-attachments/assets/f1c1777c-d207-4e22-aa04-2f996c17fab8)
+
+* Open ‘MAKESIG’
+	* This tool will generate a signature file which stores the spectral properties of mangroves.  
+* Define your training sites as ‘trainmangrove’
+* Use the tasseled cap results under ‘bands to be processed’
+	* The tasseled cap greenness, wetness, and brightness images will not take as long to process as using all of the bands. 
+* Click ‘Enter signature file names…’ and input the signature name as mangrove and uncheck ‘create signature group file’
+
+![image](https://github.com/user-attachments/assets/81e94e31-fc7f-4241-b1fc-c3ee8e30bd25)
+
+* Open ‘Mahalclass’
+	* This tool uses [Mahalanobis distance](https://www.statisticshowto.com/mahalanobis-distance/) to predict which pixels are most similar to those identified in the training samples. 
+* Choose ‘mangrove' as the signature file.
+* Set the output prefix to ‘mahal’
+* Check ‘Use Mask’ and select the study area mask for your quad
+
+![image](https://github.com/user-attachments/assets/b835e85c-ead8-4cdf-86e1-56bd1533b4ff)
+
+* After mahalclass has finished running, add the resulting mahalmangrove raster to your map window
+* Toggle transparency and inspect the result
+	* Mahalanobis is a soft classifier, meaning that 
+* Here, the mangrove class is underrepresented, so I will digitize more training sites and rerun the makesig and mahalclass tools
+
+![image](https://github.com/user-attachments/assets/b6207035-2690-4905-ab36-6ed8b0711078)
+
+
+* With just a few times iterating by adding one or two training sites each time and then running the tools again, I get a much better prediction.
+
+![image](https://github.com/user-attachments/assets/e5ca74d1-9c07-4eca-a2e5-54a5d1b08da7)
+
+* To apply the classification to the image, first reclassify all values larger than 0.001 to create a mask of predicted mangrove
+	* The Mahalanobis classification typically results in very small values, you can choose any value you see fit, usually between 0.01 and 0.001
+
+![image](https://github.com/user-attachments/assets/4be7c38b-0c46-49be-a803-926186dd7a8b)
+
+![image](https://github.com/user-attachments/assets/cbe425d8-64c7-423f-bc7d-b8490d3929c3)
+
+* Next, Select the landcover layer, press ‘D’ to open the digitize pane. 
+* Choose the 2024 landcover layer as the raster layer to update, and the new class ID as 1. Check ‘Use Mask file’ and select the reclassified mangrove classification
+
+![image](https://github.com/user-attachments/assets/0bca2467-17d2-4428-adbf-285c7eac6996)
+
+* Zoom to the area previously misclassified and draw a polygon around it 
+
+![image](https://github.com/user-attachments/assets/2f72824a-7e2e-49e0-a8db-a09f2c4af97e)
+
+* Save the vector layer and apply the edits to the landcover raster. 
+* Now the landcover layer reflects the extent of mangroves accurately.
+
+![image](https://github.com/user-attachments/assets/af6f81fb-e62b-4e44-ad5b-b91e51e50c5f)
+
+
+
+
+
+</details>
 
 </details>

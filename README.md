@@ -530,7 +530,7 @@ Below is a description of each ogh the images used in digitizing mangroves.
 ![image](https://github.com/user-attachments/assets/81e94e31-fc7f-4241-b1fc-c3ee8e30bd25)
 
 * Open ‘Mahalclass’
-	* This tool uses [Mahalanobis distance](https://www.statisticshowto.com/mahalanobis-distance/) to predict which pixels are most similar to those identified in the training samples. 
+	* This tool uses Mahalanobis distance to predict which pixels are most similar to those identified in the training samples. Unlike Euclidean (straight line) distance, Mahalanobis distance is a relative measure and it uses uses relationship between correlated variables to make calculate relative distance values. If you're interested in learning more about how Mahalanobis distance is calculated and applied, here are a few great resources: [a conceptual overview of the method](https://www.statisticshowto.com/mahalanobis-distance/) and [an applied classification example](https://www.machinelearningplus.com/statistics/mahalanobis-distance/).
 * Choose ‘mangrove' as the signature file.
 * Set the output prefix to ‘mahal’
 * Check ‘Use Mask’ and select the study area mask for your quad

@@ -108,9 +108,11 @@ PLACEHOLDER
 
 Hotkeys help complete data analysis very quickly. They can be customized by navigating to File > User Preferences > Hotkeys. Some helpful default hotkeys are as follows:
 
-* D : Opens a new digitizing pane to create a vector layer
+* D : Opens a new digitizing pane to create a vector layer.
 * T : Toggles the top raster layer. this is useful for switching on and off the landcover layer.
 * R : Adds a raster layer to the current map frame.
+* Home : Zooms out to the full extent of selected layer.
+* End : Maximizes the map frame to the largest available size.
 * Control + G : Opens the current map zoom extent in Google Earth Desktop. Examining Google Earth imagery is useful for detecting smaller ponds.
 
 ## Help System

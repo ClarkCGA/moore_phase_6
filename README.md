@@ -396,7 +396,7 @@ Below is a description of each ogh the images used in digitizing mangroves.
 
 </details>
 
-### Tutorial 4: Bringing in Additional Data
+### Tutorial 4:Downloading and Importing Landsat Scenes
 
 <details>
 
@@ -406,21 +406,14 @@ Below is a description of each ogh the images used in digitizing mangroves.
 
 
 
-## Tutorial Data
-
-
-
-* Data for CP LANDSAT tutorial can be downloaded from this repo (tutorial_data.zip)
-
-
-
 ## CP LANDSAT - Download Scene from Earth Explorer
 
 
 
 * To download Landsat imagery for a quad, go to https://earthexplorer.usgs.gov/
+	* EarthExplorer is the USGS-managed website that hosts earth observation data from a vairiety of sources, from Landsat to NOAA, and even some commercial sattelite data. The search options are powerful for choosing which image to select.
 
-* Log in, or create an account
+* Create a free EarthExplorer account by clicking the 'log in' button in the top right corner of the webpage, or log in if you have an existing account.
   
 * Once you have logged in, select ‘path / row’ as your geocoding method
 
@@ -428,19 +421,19 @@ Below is a description of each ogh the images used in digitizing mangroves.
   
 * Constrain the dates between January 1st and December 31st for 2024.
   
-* Go to data sets
+* Click the 'data sets' button on the bottom of the screen to move to the data sets tab. 
 
   
 ![image](https://github.com/user-attachments/assets/3cccca91-1c71-45c2-9fb9-6fdc400d2080)
 
 
-* In the data search list, under Landsat, select ‘Landsat Collection 2 Level 1’ and check the box for Landsat 8/9 OLI/TIRS C2 L1, then go to results.
+* In the data search list, under Landsat, select ‘Landsat Collection 2 Level 1’ and check the box for Landsat 8/9 OLI/TIRS C2 L1, then click the 'result' button to view the search results.
 	* Collection 2 Level 1 contains preprocessed non-atmospherically corrected data that represents top-of-atmosphere (TOA) reflectance values. We're using this dataset becuase this is most similar to TOA reflectance data distributed from early Landsat sattelites.
 
 ![image](https://github.com/user-attachments/assets/2c6941db-92bb-44e1-b93b-32b097aa1db7)
 
-
-* Examine the available images to find one with minimal clouds
+* The results tab shows you images that match the search criteria entered in the search criteria and data sets tabs. 
+* Examine the available images to find one with minimal clouds over the study area for your chosen quad.
 
 ![image](https://github.com/user-attachments/assets/8b393824-a714-4b9a-9194-c1f5bd846c1d)
 
@@ -475,9 +468,9 @@ Below is a description of each ogh the images used in digitizing mangroves.
 
 * CP_Landsat imports the .tif files to .rst, then projects them to the desired coordinate system and performs the following functions:
 * Images are pansharpened to 15 meter resolution.
-	* The panchromatic band captures light across the visible spectrum at a 15m resolution, compared to 30m for all other bands. The information from the panchromatic band can then be used to increase the resolution of the
+	* The panchromatic band captures light across the visible spectrum (from 0.5 - 0.68 micrometers)at a 15m spatial resolution, compared to 30m pixel size for all other bands. The panchromatic band can then be used to increase the resolution of the red, green, and blue bands by combining the higher resolution imagery with the color information. See [here](https://up42.com/blog/how-pansharpening-improves-satellite-imagery) for more information of pansharpening.
  * The  [tasseled cap transformation](https://pro.arcgis.com/en/pro-app/latest/help/analysis/raster-functions/tasseled-cap-function.htm) is also run on the data.
-	* Tasseled cap reduces the dimentionality of the data. By taking data from 6 bands and condensing it down to 3 images, it still retains important charactaristics about the land surface, and reduces processing time.
+	* Tasseled cap reduces the dimentionality of the data. By taking data from 6 bands and condensing it down to 3 images, it still retains important charactaristics about the land surface, and reduces processing time when further analyzing the imagery.
  	* The three output images are greeness, wetness, and brightness. Greenness represents healthy vegetation, while wetness measures surface water as well as moisture content in soil and vegetation. Brightness represents the overall albedo of ground objects. 
 
 
@@ -508,15 +501,22 @@ Below is a description of each ogh the images used in digitizing mangroves.
 
 <summary>Mahalanobis Classification</summary>
 
-* Now that the landsat images have been downloaded, they’re ready to be classified.
-* Open the newly downloaded composite.
-* Here we see a large area within a quad is misclassified as not having any mangrove.
+## Tutorial data
+
+* The data for this tutorial is provided as ___.zip
+* Download ___.zip, extract the files, and set up a new project in Terrset using the working and resources folders included
+
+
+* Here we see a large area within a quad is misclassified as not having any mangrove. Although we could manually digitize each patch of mangrove, with an environment so complex, it would take a long time and result in a less accurate classification than a model-based classification. 
 
 ![image](https://github.com/user-attachments/assets/537a458f-324d-4eca-9844-578fc73c8ccf)
 
-* Create a new vector file and label it ‘trainmangrove’
-* Digitize some training sites within the mangrove class. (make sure to save the digitization edits before moving to the next step!)
-	* Areas within mangrove often appear deep red in the composite, but it's important to get a variety of training sites throughout the region you are trying to classify.
+## Creating Training sites
+
+* Create a new vector file by opening hte digitize tool through the search bar or tool pane. For the name of the layer to be created, type 'trainmangrove'. Check the box for 'monitor training site areas', this will bring up a window showing the total number of pixels that have been selected for a particular class 
+* Digitize some polygons within the areas of mangrove, making sure that all of the digitized polygons have the class listed as 1. These will be used as training sites for our automated classification.
+	* It's important to ensure that you have captured a vaiery of areas within the class you wish to digitize, as classes such as mangrove have subtle variation in their reflectance values. A good rule of thumb is to add two or three new training sites each time you refine the classification, and keep each training site to no larger than 100 cells. 
+ 	* Make sure to save your digitized training sites before moving to the next step. 	
 
 ![image](https://github.com/user-attachments/assets/f1c1777c-d207-4e22-aa04-2f996c17fab8)
 
@@ -537,27 +537,33 @@ Below is a description of each ogh the images used in digitizing mangroves.
 
 ![image](https://github.com/user-attachments/assets/b835e85c-ead8-4cdf-86e1-56bd1533b4ff)
 
+
 * After mahalclass has finished running, add the resulting mahalmangrove raster to your map window
 * Toggle transparency and inspect the result
-	* Mahalanobis is a soft classifier, meaning that 
-* Here, the mangrove class is underrepresented, so I will digitize more training sites and rerun the makesig and mahalclass tools
+	* Mahalanobis is a soft classifier, meaning that it outputs typicality values representing how similar the classified pixel is to those identified in the training samples. Larger typicality values indicate that the identified pixel is more similar to the training samples.
+* From this first run, we see that the the mangrove class is underrepresented, so more training samples will need to be added. Here, I go back to 'trainmangrove' polygon in the composer window and digitize 2-3 more training sites in areas where the model missed. If I saw overprediction in areas that are not mangrove, I would delete training sites in those areas. 
 
 ![image](https://github.com/user-attachments/assets/b6207035-2690-4905-ab36-6ed8b0711078)
 
 
-* With just a few times iterating by adding one or two training sites each time and then running the tools again, I get a much better prediction.
-
+* After iterating through these steps a few tmes, digitizing a few new training sites, then running makesig and mahalclass, then refining further, I have a classification I am happy with.
+	* It is important to take an iterative approach to digitization rahter than classifying all of the mangrove at once, as this results in a much more accurate final product.
+   
 ![image](https://github.com/user-attachments/assets/e5ca74d1-9c07-4eca-a2e5-54a5d1b08da7)
 
-* To apply the classification to the image, first reclassify all values larger than 0.001 to create a mask of predicted mangrove
-	* The Mahalanobis classification typically results in very small values, you can choose any value you see fit, usually between 0.01 and 0.001
+## Create Mangrove Mask
+
+* To apply the classification to the image, we first have to change this from a soft classification to a hard classification, meaning that all of the pixels identified as mangrove are assigned a value of 1, and all pixels not mangrove are assigned a value of 0. To create this hard classification, use the reclass tool to reclassify all values less than 0.01 as zero, and any values greater than 0.01 as 1.
+	* The Mahalanobis classification typically results in very small typicality values, you can choose any cutoff value you see fit, usually between 0.01 and 0.001.
 
 ![image](https://github.com/user-attachments/assets/4be7c38b-0c46-49be-a803-926186dd7a8b)
 
 ![image](https://github.com/user-attachments/assets/cbe425d8-64c7-423f-bc7d-b8490d3929c3)
 
-* Next, Select the landcover layer, press ‘D’ to open the digitize pane. 
-* Choose the 2024 landcover layer as the raster layer to update, and the new class ID as 1. Check ‘Use Mask file’ and select the reclassified mangrove classification
+## Add Mangrove to the Landcover Layer
+
+* To add the classified mangrove to the landcover layer, first select the landcover layer, press ‘D’ to open the digitize pane. 
+* Choose the 2024 landcover layer as the raster layer to update, and the new class ID as 1. Check ‘Use Mask file’ and select the reclassified mangrove classification from the previous step.
 
 ![image](https://github.com/user-attachments/assets/0bca2467-17d2-4428-adbf-285c7eac6996)
 

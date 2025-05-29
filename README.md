@@ -124,7 +124,7 @@ Terrset contains a detailed and comprehensive buildo access the help system
 In this project, we use proprietray tools developed for CGA employees only. These tools are made available through the 'Update Terrset' tool. It's usually a good idea to check for updates every week or two. To check for updates:
 
 * Before attempting to update TerrSet, make sure the program is closed completely.
-* Open file explorer and paste the following //sandy/IDRISI/ProgDrive/update. This connects to the sandy drive containing many files for software development. 
+* Open file explorer and paste the following into the address bar `\\sandy\IDRISI\ProgDrive\update`. This connects to the sandy drive containing many files for software development. 
 * Double click on the the 'Update TerrSet' tool to run it.
 
 ![image](https://github.com/user-attachments/assets/8e266e2d-fc99-48d8-a5c0-005e794f634a)

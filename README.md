@@ -115,7 +115,7 @@ Hotkeys help complete data analysis very quickly. They can be customized by navi
 
 ## Help System
 
-Terrset contains a detailed and comprehensive buildo access the help system
+Terrset contains a detailed and comprehensive help and documentation system built into the application. To access the help system either go to File > Help > Contents and search any tool or workflow, or click the 'Help' button on any tool.
 
 ![image](https://github.com/user-attachments/assets/03516dcb-ec94-4bef-877a-ea61d74bd3ec)
 
@@ -585,7 +585,7 @@ Below is a description of each ogh the images used in digitizing mangroves.
 
 
 * After iterating through these steps a few tmes, digitizing a few new training sites, then running makesig and mahalclass, then refining further, I have a classification I am happy with.
-	* It is important to take an iterative approach to digitization rahter than classifying all of the mangrove at once, as this results in a much more accurate final product.
+	* It is important to take an iterative approach to digitization rather than classifying all of the mangrove at once, as this results in a much more accurate final product.
    
 ![image](https://github.com/user-attachments/assets/e5ca74d1-9c07-4eca-a2e5-54a5d1b08da7)
 
@@ -605,7 +605,7 @@ Below is a description of each ogh the images used in digitizing mangroves.
 
 ![image](https://github.com/user-attachments/assets/0bca2467-17d2-4428-adbf-285c7eac6996)
 
-* Zoom to the area previously misclassified and draw a polygon around it 
+* Zoom to the area previously misclassified and draw a polygon around it. This will be the boundary of the extent of the added mangrove.
 
 ![image](https://github.com/user-attachments/assets/2f72824a-7e2e-49e0-a8db-a09f2c4af97e)
 

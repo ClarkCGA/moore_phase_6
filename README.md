@@ -48,7 +48,7 @@ PLACEHOLDER
   
 <summary>Training Resources</summary>
 
-### Tutorial 1: Where do I store this data?
+### Tutorial 1: Folder Setup and Best Practices
 
 <details>
 
@@ -101,8 +101,42 @@ PLACEHOLDER
  
 </details>
 
+<details>
+<summary>Terrset Tips</summary>
 
-### Tutorial 2: What do these layers mean?
+## Hotkeys
+
+Hotkeys help complete data analysis very quickly. They can be customized by navigating to File > User Preferences > Hotkeys. Some helpful default hotkeys are as follows:
+
+* D : Opens a new digitizing pane to create a vector layer
+* T : Toggles the top raster layer. this is useful for switching on and off the landcover layer.
+* R : Adds a raster layer to the current map frame.
+* Control + G : Opens the current map zoom extent in Google Earth Desktop. Examining Google Earth imagery is useful for detecting smaller ponds.
+
+## Help System
+
+Terrset contains a detailed and comprehensive buildo access the help system
+
+![image](https://github.com/user-attachments/assets/03516dcb-ec94-4bef-877a-ea61d74bd3ec)
+
+## Update Terrset
+
+In this project, we use proprietray tools developed for CGA employees only. These tools are made available through the 'Update Terrset' tool. It's usually a good idea to check for updates every week or two. To check for updates:
+
+* Before attempting to update TerrSet, make sure the program is closed completely.
+* Open file explorer and paste the following //sandy/IDRISI/ProgDrive/update. This connects to the sandy drive containing many files for software development. 
+* Double click on the the 'Update TerrSet' tool to run it.
+
+![image](https://github.com/user-attachments/assets/8e266e2d-fc99-48d8-a5c0-005e794f634a)
+
+* The tool will open a shell window and excecute a series of commends updating any bug fixes or changes in the TerrSet codebase. Once the tool is finished running, press any key to close the window and reopen TerrSet.
+
+![image](https://github.com/user-attachments/assets/fd19a308-8f8b-48be-a615-9ea2f1e529fc)
+
+
+</details>
+
+### Tutorial 2: Data Layers Description
 
 <details>
 <summary>Layer Description</summary>
@@ -396,7 +430,7 @@ Below is a description of each ogh the images used in digitizing mangroves.
 
 </details>
 
-### Tutorial 4:Downloading and Importing Landsat Scenes
+### Tutorial 4: Downloading and Importing Landsat Scenes
 
 <details>
 
@@ -520,6 +554,8 @@ Below is a description of each ogh the images used in digitizing mangroves.
 
 ![image](https://github.com/user-attachments/assets/f1c1777c-d207-4e22-aa04-2f996c17fab8)
 
+## MAKESIG - Extract Spectral Charactaristics
+
 * Open ‘MAKESIG’
 	* This tool will generate a signature file which stores the spectral properties of mangroves.  
 * Define your training sites as ‘trainmangrove’
@@ -528,6 +564,8 @@ Below is a description of each ogh the images used in digitizing mangroves.
 * Click ‘Enter signature file names…’ and input the signature name as mangrove and uncheck ‘create signature group file’
 
 ![image](https://github.com/user-attachments/assets/81e94e31-fc7f-4241-b1fc-c3ee8e30bd25)
+
+## Mahalclass - Apply classification
 
 * Open ‘Mahalclass’
 	* This tool uses Mahalanobis distance to predict which pixels are most similar to those identified in the training samples. Unlike Euclidean (straight line) distance, Mahalanobis distance is a relative measure and it uses uses relationship between correlated variables to make calculate relative distance values. If you're interested in learning more about how Mahalanobis distance is calculated and applied, here are a few great resources: [a conceptual overview of the method](https://www.statisticshowto.com/mahalanobis-distance/) and [an applied classification example](https://www.machinelearningplus.com/statistics/mahalanobis-distance/).

@@ -503,8 +503,8 @@ Below is a description of each ogh the images used in digitizing mangroves.
 
 ## Tutorial data
 
-* The data for this tutorial is provided as ___.zip
-* Download ___.zip, extract the files, and set up a new project in Terrset using the working and resources folders included
+* The data for this tutorial is provided within tutorial_data.zip, in the mahalclass_tutorial folder.
+* Download tutorial_data.zip, extract the files, and set up a new project in Terrset using the working and resources folders included in the mahalclass_tutorial folder.
 
 
 * Here we see a large area within a quad is misclassified as not having any mangrove. Although we could manually digitize each patch of mangrove, with an environment so complex, it would take a long time and result in a less accurate classification than a model-based classification. 

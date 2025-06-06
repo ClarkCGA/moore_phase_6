@@ -114,6 +114,7 @@ Hotkeys help complete data analysis very quickly. They can be customized by navi
 * Home : Zooms out to the full extent of selected layer.
 * End : Maximizes the map frame to the largest available size.
 * Control + G : Opens the current map zoom extent in Google Earth Desktop. Examining Google Earth imagery is useful for detecting smaller ponds.
+* Shift: By holding shift while digitizing a polygon, you can draw shapes by clicking and dragging the mouse rather than clicking at each vertex.
 
 ## Help System
 

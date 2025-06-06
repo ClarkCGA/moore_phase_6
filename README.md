@@ -622,4 +622,26 @@ Below is a description of each ogh the images used in digitizing mangroves.
 
 </details>
 
+<details>
+
+<summary>Salt vs Aquaculture</summary>
+
+## Tutorial Data
+
+* Tutorial data can be downloaded from github
+
+## Background
+
+* When digitizing aquaculture ponds, it is easy to mistake these ponds for similar manmade ponds used for other purposes. One prominent use of coastal ponds is for salt collection, where large amounts of seawater are left to evaporate, and the remaining salt is harvested and sold. Luckily, ponds with high salt and mineral content are easy to distinguish from freshwater ponds in multispectral imagery. These ponds with concentrated salt content will appear as bright purple in the flase color composite. Another clue when looking at salt ponds is their structure, many have some large ponds with progressively smaller ponds where they move the water to once it has evaporated.
+* The example below shows salt harvesting ponds in Ecuador, note the bright purple coloration as well as the patteren of decreasing pond size as the salt water evaporates more.
+
+![image](https://github.com/user-attachments/assets/befb9796-e40d-4aad-972a-ac1dea70fea6)
+
+* This example from Vietnam shows salt harvesting on a much smaller scale, note that each of the purple ponds are individual plots of salt harvesting.
+
+![image](https://github.com/user-attachments/assets/b59382e5-6784-4218-8a10-c7f380d56d10)
+
+
+</details>
+
 </details>

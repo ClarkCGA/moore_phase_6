@@ -30,19 +30,6 @@ Distribution of over 600 Landsat quads analyzed to map 17 countries.
 
 
 
-<details>
-
-<summary>Quad List</summary>
-
-
-
-PLACEHOLDER
-		
-
-  
-</details>
-
-
 
 <details>
   

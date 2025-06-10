@@ -47,7 +47,7 @@ Distribution of over 600 Landsat quads analyzed to map 17 countries.
 ![image](https://github.com/user-attachments/assets/f4114424-de88-45c0-a2e0-ca8516849279)
 
 
-2) The Moore folder should contain GIS_Files (downloaded from canvas) and a folder for each country we're working in.
+2) The Moore folder should contain GIS_Files (Available on GitHub) and a folder for each country we're working in.
 
 
 
